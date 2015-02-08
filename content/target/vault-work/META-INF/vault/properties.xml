@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>InsideAEM Include Strategy Support Content Package</comment>
+<entry key="createdBy">juju</entry>
+<entry key="name">insideaem-includestrategy-content</entry>
+<entry key="created">2015-02-08T15:27:46.035+0100</entry>
+<entry key="groupId">com.insideaem</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">Inside AEM</entry>
+<entry key="description">Content package pages, widgets, js and css required to run the InsideAEM Include Strategy Support application</entry>
+<entry key="artifactId">insideaem-includestrategy-content</entry>
+<entry key="path">/etc/packages/Inside AEM/insideaem-includestrategy-content.zip</entry>
+</properties>

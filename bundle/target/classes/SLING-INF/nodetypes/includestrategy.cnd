@@ -1,0 +1,6 @@
+<'inaem'='http://www.insideaem.com/inaem/1.0'>
+
+[inaem:IncludeStrategy]
+  mixin
+  - inaem:type (string)
+  - inaem:disableCaching (boolean)

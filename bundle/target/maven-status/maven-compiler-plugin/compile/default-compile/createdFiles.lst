@@ -1,0 +1,8 @@
+com\insideaem\includestrategy\impl\IncludeStrategyAdapterFactory.class
+com\insideaem\includestrategy\impl\IncludeStrategyFilter$InternalSlingHttpServletRequestWrapper.class
+com\insideaem\includestrategy\impl\IncludeStrategyResourceImpl.class
+com\insideaem\includestrategy\api\IncludeStrategy.class
+com\insideaem\includestrategy\impl\IncludeStrategyImpl.class
+com\insideaem\includestrategy\api\IncludeStrategyConstants.class
+com\insideaem\includestrategy\impl\IncludeStrategyFilter.class
+com\insideaem\includestrategy\api\IncludeStrategyResource.class

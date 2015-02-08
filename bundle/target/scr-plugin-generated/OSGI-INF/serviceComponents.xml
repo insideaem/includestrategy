@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" name="com.insideaem.includestrategy.impl.IncludeStrategyAdapterFactory">
+        <implementation class="com.insideaem.includestrategy.impl.IncludeStrategyAdapterFactory"/>
+        <service servicefactory="false">
+            <provide interface="org.apache.sling.api.adapter.AdapterFactory"/>
+        </service>
+        <property name="adapters" type="String" value="com.insideaem.includestrategy.api.IncludeStrategy"/>
+        <property name="adaptables" type="String" value="org.apache.sling.api.resource.Resource"/>
+        <property name="service.pid" value="com.insideaem.includestrategy.impl.IncludeStrategyAdapterFactory"/>
+        <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResourceResolverFactory" unbind="unbindResourceResolverFactory"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.insideaem.includestrategy.impl.IncludeStrategyFilter">
+        <implementation class="com.insideaem.includestrategy.impl.IncludeStrategyFilter"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Filter"/>
+        </service>
+        <property name="sling.filter.scope" type="String" value="COMPONENT"/>
+        <property name="service.ranking" type="Integer" value="-200000"/>
+        <property name="service.description" type="String" value="Include Strategy Support Filter. This can be used to include a component using different strategies"/>
+        <property name="service.vendor" type="String" value="InsideAEM"/>
+        <property name="service.pid" value="com.insideaem.includestrategy.impl.IncludeStrategyFilter"/>
+    </scr:component>
+</components>
